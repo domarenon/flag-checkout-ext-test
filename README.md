@@ -1,78 +1,60 @@
-# Shopify App Template - None (app with extensions only)
 
-This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) that includes no app home UI. It contains the basics for building a Shopify app that uses only app extensions.
+# Daniel Orozco Mendez - Part-time Shopify Expert - Flag & Anthem
 
-**If you plan for your app to load its own page in the Shopify Admin, then you'll want to choose one of our other templates.**
+Back-End Development - Custom Checkout Feature
 
-Whether you choose to use this template or another one, you can use your preferred package manager and the Shopify CLI with [these steps](#installing-the-template).
+## Demo
 
-## Benefits
+[Test Shopify Store](https://danielorozcocheckout.myshopify.com/)
 
-Shopify apps are built on a variety of Shopify tools to create a great merchant experience. The [create an app](https://shopify.dev/docs/apps/getting-started/create) tutorial in our developer documentation will guide you through creating a Shopify app.
 
-This app template does little more than install the CLI and scaffold a respository.
+## Steps
 
-## Getting started
+##### 1. Go to the [Test Shopify Store](https://danielorozcocheckout.myshopify.com/)
 
-### Requirements
+##### 2. Use the access code: rtacru
 
-1. You must [download and install Node.js](https://nodejs.org/en/download/) if you don't already have it.
-1. You must [create a Shopify partner account](https://partners.shopify.com/signup) if you don’t have one.
-1. You must create a store for testing if you don't have one, either a [development store](https://help.shopify.com/en/partners/dashboard/development-stores#create-a-development-store) or a [Shopify Plus sandbox store](https://help.shopify.com/en/partners/dashboard/managing-stores/plus-sandbox-store).
+##### 3. Add any product to cart
 
-### Installing the template
+##### 4. Proceed to checkout
 
-This template can be installed using your preferred package manager:
+#####
 
-Using yarn:
+## Admin Settings
 
-```shell
-yarn create @shopify/app
+If you need access to the [Test Shopify Store Settings](https://admin.shopify.com/store/danielorozcocheckout) please provide me your shopify email to add you as owner of the test store. This way you could change the Checkout Extension settings.
+
+
+## For Developers
+
+#### Installation
+
+Download the source code and install dependencies
+
+```bash
+  npm install 
+```
+    
+#### Code Changes
+
+To change anything on this project first do the changes and then run
+
+```bash
+  npm run dev
 ```
 
-Using npm:
+Use the generated link to install on a test Shopify store
 
-```shell
-npm init @shopify/app@latest
+#### Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
 ```
 
-Using pnpm:
+Use the generated link to install on a Shopify Plus store
+## Author
 
-```shell
-pnpm create @shopify/app@latest
-```
+- [@domarenon](https://github.com/domarenon)
 
-This will clone the template and install the required dependencies.
-
-#### Local Development
-
-[The Shopify CLI](https://shopify.dev/docs/apps/tools/cli) connects to an app in your Partners dashboard. It provides environment variables and runs commands in parallel..
-
-You can develop locally using your preferred package manager. Run one of the following commands from the root of your app.
-
-Using yarn:
-
-```shell
-yarn dev
-```
-
-Using npm:
-
-```shell
-npm run dev
-```
-
-Using pnpm:
-
-```shell
-pnpm run dev
-```
-
-Open the URL generated in your console. Once you grant permission to the app, you can start development (such as generating extensions).
-
-## Developer resources
-
-- [Introduction to Shopify apps](https://shopify.dev/docs/apps/getting-started)
-- [App authentication](https://shopify.dev/docs/apps/auth)
-- [Shopify CLI](https://shopify.dev/docs/apps/tools/cli)
-- [Shopify API Library documentation](https://github.com/Shopify/shopify-api-js#readme)
