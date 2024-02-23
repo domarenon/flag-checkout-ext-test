@@ -19697,6 +19697,7 @@ ${errorInfo.componentStack}`);
     const { query } = useApi();
     const [collectionData, setCollectionData] = (0, import_react20.useState)(null);
     const settings = useSettings();
+    const upsellTitle = settings.upsell_title;
     const ifMultiple = settings.multiple_products;
     const collectionId = settings.selected_collection;
     const variantId = settings.selected_variant;
@@ -19736,7 +19737,7 @@ ${errorInfo.componentStack}`);
     return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(import_jsx_runtime5.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Divider2, {}),
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(BlockSpacer2, { spacing: "base" }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Heading2, { level: 2, children: "Other Products You May Like" }),
+      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Heading2, { level: 2, children: upsellTitle }),
       ifMultiple && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(import_jsx_runtime5.Fragment, { children: collectionData.products.edges.map(function(product, i) {
         return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(UpsellItem, { variantId: product.node.variants.edges[0].node.id }, "upsell-item-" + i);
       }) }),

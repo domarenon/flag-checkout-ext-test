@@ -45,6 +45,11 @@ api_access = true
 
 [extensions.settings]
 [[extensions.settings.fields]]
+key = "upsell_title"
+type = "single_line_text_field"
+name = "Upsell Title"
+
+[[extensions.settings.fields]]
 key = "multiple_products"
 type = "boolean"
 name = "Display several products from a collection"

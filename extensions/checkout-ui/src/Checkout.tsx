@@ -31,6 +31,7 @@ function Extension() {
   const [collectionData, setCollectionData] = useState<null | CollectionData>(null);
 
   const settings = useSettings();
+  const upsellTitle = settings.upsell_title as string;
   const ifMultiple = settings.multiple_products as boolean;
   const collectionId = settings.selected_collection as string;
   const variantId = settings.selected_variant as string;
@@ -73,7 +74,7 @@ function Extension() {
     <>
       <Divider/>
       <BlockSpacer spacing="base"/>
-      <Heading level={2}>Other Products You May Like</Heading>
+      <Heading level={2}>{upsellTitle}</Heading>
       { ifMultiple && 
         <>
           {
